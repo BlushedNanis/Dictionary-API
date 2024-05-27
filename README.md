@@ -1,5 +1,12 @@
-# Dictionary REST API
+# Dictionary REST API (Flask)
 
-This project has been developed during the "Python Mega Course" by Ardit Sulce.
+REST API created using Flask. Any term that appears in the dictionary data (csv file) will have its definition returned by the API. A basic example of using the API is provided on the webpage, and if you make a request, you will receive a dictionary with the word and its description as keys.
 
-This is a simple REST API which returns the definition of a given word in a JSON instance through an endpoint.
+### Example:
+
+URL: [127.0.0.1:5000/api/v1/sun](http://127.0.0.1:5000/api/v1/sun)
+
+Response: {
+    "definition": "1. Any star, especially when seen as the centre of any single solar system.\n2. The particular star at the centre of our solar system, from which the Earth gets light and heat.\n",
+    "word": "sun"
+}
